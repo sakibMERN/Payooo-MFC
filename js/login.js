@@ -9,7 +9,16 @@ document.getElementById("button-login").addEventListener("click", function(event
     console.log("Login Button Clicked");
 
     //Step-3: Get the phone number
-    const phoneNumber = document.getElementById("phone-number");
+    const phoneNumber = document.getElementById("phone-number").value;
+    const pinNumber = document.getElementById("pin-number").value;
+
+    if(phoneNumber === "01990030303" && pinNumber === "1234"){
+        window.location.href = "./home.html";
+    }
+    else{
+        alert("Incorrect phone or pin number")
+    }
+
 
     console.log(phoneNumber.value);
 })
