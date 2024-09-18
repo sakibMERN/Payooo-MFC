@@ -1,0 +1,13 @@
+//add money to the account
+
+//Step-1 : add an event handler to the add money button inside the form
+document.getElementById("btn-add-money").addEventListener("click", function(e){
+    e.preventDefault(); //for prevent reload after form submit.
+
+    // Step-2: get money to be added to the account
+    const addMoneyInput = document.getElementById("input-add-money").value;
+    
+    //get the pin
+    const pinNumberInput = document.getElementById("input-pin-number").value;
+    console.log(pinNumberInput);
+})

@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-</head>
-<body>
-    <h1>Welcome to you new dream.</h1>
-</body>
+
+    <!-- add daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="flex justify-center">
+      <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-3">
+            
+            <!-- Available Balance -->
+            <div class="stats shadow mt-10">
+              <div class="stat">
+                
+                <div id="balance" class="stat-value">89,400</div>
+                <div class="stat-desc">Available Balance</div>
+              </div>
+            </div>
+            <!-- add divider -->
+            <div class="divider"></div>
+            <!-- User action Button -->
+             <div>
+                <button class="btn btn-lg">Add Money</button>
+                <button class="btn btn-lg">Cash Out</button>
+             </div>
+             <!-- add divider -->
+             <div class="divider"></div>
+
+             <!-- Money management form start-->
+             <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Add Amount</span>
+                  </label>
+                  <input id="input-add-money"  type="text" placeholder="Add Your Amount Here" class="input input-bordered" required />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Password</span>
+                  </label>
+                  <input id="input-pin-number" type="password" placeholder="Pin Number" class="input input-bordered" required />
+                </div>
+                <div class="form-control mt-6">
+                  <button id="btn-add-money" class="btn btn-primary">Add Money</button>
+                </div>
+              </form>
+              <!-- Money management form end-->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/home.js"></script>
+  </body>
 </html>
