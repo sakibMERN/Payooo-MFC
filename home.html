@@ -24,7 +24,7 @@
             <div class="stats shadow mt-10">
               <div class="stat">
                 
-                <div id="balance" class="stat-value">89,400</div>
+                <div id="account-balance" class="stat-value">9400</div>
                 <div class="stat-desc">Available Balance</div>
               </div>
             </div>
@@ -38,7 +38,7 @@
              <!-- add divider -->
              <div class="divider"></div>
 
-             <!-- Money management form start-->
+             <!-- Add money form start-->
              <form class="card-body">
                 <div class="form-control">
                   <label class="label">
@@ -48,7 +48,7 @@
                 </div>
                 <div class="form-control">
                   <label class="label">
-                    <span class="label-text">Password</span>
+                    <span class="label-text">Pin</span>
                   </label>
                   <input id="input-pin-number" type="password" placeholder="Pin Number" class="input input-bordered" required />
                 </div>
@@ -56,12 +56,33 @@
                   <button id="btn-add-money" class="btn btn-primary">Add Money</button>
                 </div>
               </form>
-              <!-- Money management form end-->
+              <!-- Add money form end-->
+
+             <!-- cash out form start-->
+             <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Withdrawal Amount</span>
+                  </label>
+                  <input id="input-add-money"  type="text" placeholder="Add Your withdrawal Here" class="input input-bordered" required />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Pin</span>
+                  </label>
+                  <input id="input-pin-number" type="password" placeholder="Pin Number" class="input input-bordered" required />
+                </div>
+                <div class="form-control mt-6">
+                  <button id="btn-add-money" class="btn btn-primary">Add Money</button>
+                </div>
+              </form>
+              <!-- cash out form end-->
           </div>
         </div>
       </div>
     </main>
 
     <script src="./js/home.js"></script>
+     
   </body>
 </html>
