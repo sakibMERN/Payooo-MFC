@@ -13,7 +13,7 @@ document.getElementById("button-login").addEventListener("click", function(event
     const pinNumber = document.getElementById("pin-number").value;
 
     if(phoneNumber === "01990030303" && pinNumber === "1234"){
-        window.location.href = "./home.html";
+        window.location.href = "./file/home.html";
     }
     else{
         alert("Incorrect phone or pin number")
